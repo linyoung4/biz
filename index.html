@@ -21,19 +21,19 @@
 
 <body>
  <!-- header+nav+section>article*3+aside^footer -->  
- <header>
+ <header id="home">
     <img src="./images/logo.jpg" alt="CI">
     <h1>LinYoung's Site</h1>
 </header>
 
  <nav>
     <!-- ul>li*4{메인메뉴$$} -->
-  <ul>
-    <li>소개</li>
-    <li>쇼핑</li>
-    <li>패키지</li>
-    <li>커뮤니티</li>
-  </ul>
+    <ul>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">쇼핑</a></li>
+        <li><a href="#">패키지</a></li>
+        <li><a href="#">커뮤니티</a></li>
+    </ul>
    
  </nav>
  <section>
@@ -84,14 +84,25 @@
     <article>
         <div class="gallery">
             <iframe width="70%" height="400" src="./gallery.html" frameborder="0"></iframe>
-        </div>
+        
     </article>
 
     <aside>
         <div class="link">
-            <a href="http://mis.deu.ac.kr">경영정보학과 사이트</a> <br>
+            <a href="http://mis.deu.ac.kr" target="_blank">경영정보학과 사이트</a> <br>
             <a href="./gallery.html">갤러리</a> <br>
-            <a href=""></a>
+            <a href="#home">시작이동</a>
+        </div>
+        <div class="login">
+            <h2> 로그인</h2>
+            <form action="#" method="get">
+                회원ID <input type="text" name="id" id=""> <br>
+                비밀번호 <input type="password" name="pw" id=""> <br>
+                남자 <input type="radio" name="gender" value="1" id="">
+                여자 <input type="radio" name="gender" value="2" id="">
+                <input type="submit" value="로그인">
+                <input type="reset" value="재설정"> <br>
+            </form>
         </div>
     </aside>
  </section>
