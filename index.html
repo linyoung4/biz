@@ -16,13 +16,34 @@
     <meta name="keywords" content="ga, IT관련 블로그, 경영정보">
     <meta name="author" content="Kim LInYoung">
     <title>Welcome to LinYoung's Site</title>
-</head>
+    <script src="https://kit.fontawesome.com/bd0accc7ba.js" crossorigin="anonymous"></script>
 
+    <style>
+        header, footer{
+            height: 100px;
+        }
+        footer{
+            background-color: gray;
+        }
+        nav{
+            height: 50px;
+        }
+        section{
+            display: flex;
+        }
+        .content{
+            flex:4;
+        }
+        aside{
+            flex:1;
+        }
+    </style>
+</head>
 
 <body>
  <!-- header+nav+section>article*3+aside^footer -->  
  <header id="home">
-    <img src="./images/logo.jpg" alt="CI">
+    <i class="fa-sharp fa-solid fa-bars"></i>
     <h1>LinYoung's Site</h1>
 </header>
 
@@ -37,6 +58,7 @@
    
  </nav>
  <section>
+    <div class="content">
     <article>
         <div class="bigdata">
             <img src="./images/bigdata.jpg" alt="메인이미지" width="50%">
@@ -86,7 +108,7 @@
             <iframe width="70%" height="400" src="./gallery.html" frameborder="0"></iframe>
         
     </article>
-
+    </div>
     <aside>
         <div class="link">
             <a href="http://mis.deu.ac.kr" target="_blank">경영정보학과 사이트</a> <br>
@@ -106,6 +128,11 @@
         </div>
     </aside>
  </section>
- <footer>저작권과 주소</footer>
+ <footer>저작권과 주소
+    <div class="sns">
+        <i class="fa-brands fa-facebook"></i> <br>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+ </footer>
 </body>
 </html> 
