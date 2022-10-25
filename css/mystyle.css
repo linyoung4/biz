@@ -66,5 +66,8 @@ video, iframe{
     margin: 0 auto;
     width: 70%;
 }
-.
+
+.header{
+    padding-top: 100px;
+}
 </style>
